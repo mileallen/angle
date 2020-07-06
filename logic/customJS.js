@@ -49,7 +49,7 @@ document.getElementById('insD2').classList.add('fadeinc');
 
 else if (ins_id == 2) {
 
-document.getElementById('insButton').innerHTML="BACK";
+//document.getElementById('insButton').innerHTML="BACK";
 document.getElementById('insD2').classList.remove('fadeinc');
 
 ins_id = ins_id + 1;
@@ -62,7 +62,7 @@ document.getElementById('insD3').classList.add('fadeinc');
 
 else {
 
-document.getElementById('insButton').innerHTML="NEXT";
+//document.getElementById('insButton').innerHTML="NEXT";
 document.getElementById('insD3').classList.remove('fadeinc');
 
 ins_id = 1;
@@ -75,8 +75,6 @@ document.getElementById('insD1').classList.add('fadeinc');
 }
 
 }
-
-
 
 
 
@@ -155,8 +153,6 @@ window.onload = (function(){
   });
 
 
-
-
 var idxM = 0;
 
 var twtrListM	 = [
@@ -197,9 +193,6 @@ tweetimg.src = twtrListM[idxM];
 
 }
 
-
-
-
 function sayThank(){
 //alert('click');
 var eml = document.getElementById("contact-em").value;
@@ -237,4 +230,7 @@ document.getElementById("contact-em").value="Please enter a valid email address"
 
 }
 
+
+
+var insLoop = setInterval(addIncite,4000)
 

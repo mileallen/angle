@@ -1,10 +1,61 @@
 
-a:link {  
-text-decoration: none;
+:root{
+  --greyLeft: #5f6d7e;
+  --greyLeftDark: #425164;
+  --greyRight: #7a7a7a;
+  --grey10: #e7e7e7;
+  --grey20: #adadad;
+  --grey30: #7a7a7a;
+  --grey40: #5a5a5a;
+  --grey50: #252525;
+  --darkMask: #3131317e;
+  --liteMask: #a7a6a680;  
 }
-html {
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--grey40);
+  color: var(--grey10);
+  padding: 0;
+  margin: 0;
   scroll-behavior: smooth;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+margin: 0;
+padding: 0;
+}
+
+a:link {
+  color: var(--grey20);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #888888;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto:100,300,400,500,700,900&display=swap');
+
+
+
+
+
+
 @keyframes fadein {
   from {
         opacity:0;
@@ -29,4 +80,12 @@ animation-duration: 3s;
 animation-name: animtext; 
 animation-duration: 5s;
 animation-fill-mode: forwards;
+}
+
+.credits{
+  position: absolute;
+  font-size: 0.7rem;
+  font-weight: 300;
+  right: 3rem;
+  bottom: 0.7rem;
 }
